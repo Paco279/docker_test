@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Demo</title>
+
+    <!-- Estilo básico y elegante -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a73e8, #4285f4);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        p {
+            opacity: 0.9;
+            font-size: 1.2rem;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 8px;
+            color: #1a73e8;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #e3e3e3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Hola desde FastAPI 🚀</h1>
+        <p>{{ message }}</p>
+        <a class="button" href="https://fastapi.tiangolo.com">Documentación FastAPI</a>
+    </div>
+</body>
+</html>
