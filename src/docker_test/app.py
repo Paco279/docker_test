@@ -6,7 +6,7 @@ from fastapi.staticfiles import StaticFiles
 app = FastAPI()
 
 # Carpeta de templates
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="src/docker_test/templates")
 
 @app.get("/", response_class=HTMLResponse)
 def read_root(request: Request):
